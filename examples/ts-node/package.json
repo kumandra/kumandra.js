@@ -1,0 +1,16 @@
+{
+  "name": "kumandra-js-node-example",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@kumandra/kumandra": "file:../../../kumandra.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.4"
+  }
+}
