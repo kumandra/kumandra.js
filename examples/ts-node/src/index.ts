@@ -36,12 +36,12 @@ rl.question(`Please input your file, you want to upload. `, async upload_data =>
   console.log("objectId", objectId);
   
   // Using the objectId get the file as (Uint8Array) from the objectStore.
-  const object: Uint8Array = await kumandraClient.getObject(objectId);
+  // const object: Uint8Array = await kumandraClient.getObject(objectId);
   
   // Write the file as a copy from the original
-  await fs.writeFile(data, object, {});
+  // await fs.writeFile(data, object, {});
 //   console.log("writeFile ${data}");
-  console.log(data);
+  // console.log(data);
     rl.close()
 })
 
